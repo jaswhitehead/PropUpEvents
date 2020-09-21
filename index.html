@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PropUp Events</title>
+    <!-- CSS and API Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://api.eventful.com/json/events/search?callback=jsonLoaded&app_key=8rzqJcRhJTpkr8SX" />
+  </head>
+
+  <body>
+    <section class="hero">
+      <div class="hero-body">        
+          <h1 class="title">What's Happening in Your Area:</h1>        
+      </div>
+    </section>
+
+    <div class="columns">
+      <div class="column">        
+        <div class="control">
+          <input class="input is-large col-md-6" type="text" id="cities" placeholder="Enter Zip Code" name= "search">
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="row text-center">          
+          <select id="searchSelector" class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+            <option class="dropdown-item" value="3">Zip Code</option>                            
+          </select>              
+        </div> 
+      </div>
+      
+      <div class="column">  
+          <button
+            type="button"
+            id="submit"
+            class="button is-primary text-center"
+            data-toggle="modal"
+            data-target="#citesModal"
+          >
+            Search
+          </button>
+      </div>
+    </div>
+    
+    <div class="column">  
+      <button onclick="self.close()">Close</button>
+    </div>
+
+      <div class="table-container">
+        <div class="row">          
+          <div class="col-md-6" id="event-wrap">          
+                <!-- The bottom two header should only populate when there are no results to return -->
+                <h1 class="sryMsg"></h1>
+                <h3 class="sryMsgSub"></h3>
+
+                <!-- response cards for events that do appear will populate in the below div tags -->
+                <div class="headLine"></div>
+                <div class="venueName"></div>
+                <div class="eventLocation"></div>
+                <div class="eventDate"></div>
+                <a href="" class="eventLink"></a>
+                <div class="dynoPic">
+                  <img src="" class="eventImg">
+                </div>
+          </div>                
+        </div>
+      </div>      
+
+    <footer class="footer is-desktop is-centered">
+      PropUp Events &copy; &trade;
+      <button onclick="self.close()">Close</button>
+    </footer>    
+
+    <!-- all js here -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="scripts.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+
+  </body>
+</html>
