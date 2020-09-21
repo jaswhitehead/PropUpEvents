@@ -1,1 +1,1 @@
-# [PropUpEvents]("https://jaswhitehead.github.io/PropUpEvents/")
+# [PropUpEvents](https://jaswhitehead.github.io/PropUpEvents/)
