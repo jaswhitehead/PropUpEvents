@@ -8,19 +8,36 @@
 
 .footer {
     background-color:#B2D350;
-    width: 800px;
+    width: 700px;
 }
 
 hr {
     background-color: #B2D350;
     height: 50px;
-    width: 800px;
+    width: 700px;
 }
 
 #submit {
     background-color: #36A2D6;
+    width: 150px;
 }
 
 img {
-    margin-left: 200px;;
+margin-left: 150px;;
+}
+
+#search {
+    margin-left: 100px;;
+}
+
+#searchSelector {
+    border: 0px;
+}
+
+.title {
+    margin-left: 90px;
+}
+
+#close {
+    margin-left: 100px;
 }

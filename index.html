@@ -17,36 +17,38 @@
         <img src="assets/Logo.png" />      
     </div>
     <h1 class="title">What's Happening in Your Area:</h1>      
-    <div class="columns">
-      <div class="column">        
+    <div class="columns is-centered" id="search">
+      <div class="column is-half">        
         <div class="control">
           <input class="input is-large col-md-6" type="text" id="cities" placeholder="Enter Zip Code" name= "search">
         </div>
       </div>
 
+      <div class="column">  
+        <button
+          type="button"
+          id="submit"
+          class="button is-primary text-center"
+          data-toggle="modal"
+          data-target="#citesModal"
+        >
+          Search
+        </button>
+      </div>
+
       <div class="column">
         <div class="row text-center">          
           <select id="searchSelector" class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-            <option class="dropdown-item" value="3">Zip Code</option>                            
+            <option class="dropdown-item" value="3"></option>                            
           </select>              
         </div> 
       </div>
       
-      <div class="column">  
-          <button
-            type="button"
-            id="submit"
-            class="button is-primary text-center"
-            data-toggle="modal"
-            data-target="#citesModal"
-          >
-            Search
-          </button>
-      </div>
+      
     </div>
     
     <div class="column">  
-      <button onclick="self.close()">Close</button>
+      <button id="close" onclick="self.close()">Close</button>
     </div>
 
       <div class="table-container">
