@@ -40,4 +40,8 @@ margin-left: 150px;;
 
 #close {
     margin-left: 100px;
+    background-color: #B2D350;
+    color: white;
+    border: 45px;
+    width: 50px;
 }
