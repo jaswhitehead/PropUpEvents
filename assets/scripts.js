@@ -80,7 +80,7 @@ function callEvents(){
                 newEle2.text(response.events[i].venue.address);
                 newEle4.text(response.events[i].datetime_local);
                 newLink.attr("href", response.events[i].url);
-                newLink.text("Click here to find tickets");
+                newLink.text("Click here to find tickets (Powered by SeatGeek)");
 
                 newEle3.append(newEle0, newEle1, newEle2, newEle4, newLink);
 
