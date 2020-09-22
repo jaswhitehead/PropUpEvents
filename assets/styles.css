@@ -8,13 +8,13 @@
 
 .footer {
     background-color:#B2D350;
-    width: 700px;
+    width: 550px;
 }
 
 hr {
     background-color: #B2D350;
     height: 50px;
-    width: 700px;
+    width: 550px;
 }
 
 #submit {
@@ -22,12 +22,8 @@ hr {
     width: 150px;
 }
 
-img {
-margin-left: 150px;;
-}
-
 #search {
-    margin-left: 100px;;
+    margin-left: 10px;
 }
 
 #searchSelector {
@@ -35,11 +31,11 @@ margin-left: 150px;;
 }
 
 .title {
-    margin-left: 90px;
+    margin-left: 10px;
 }
 
 #close {
-    margin-left: 100px;
+    margin-left: 10px;
     background-color: #B2D350;
     color: white;
     border: 45px;
